@@ -24,7 +24,7 @@ namespace ObjectPools.Tests
                     op2._items[i].Value = sample;
 
                     index1 = op.Free(null);
-                    index2 = op2.FreeFast(null);
+                    index2 = op2.FreeFasterSimplifiedAsmAligned(null);
                     Assert.Equal(index1, index2);
                 }
             }
